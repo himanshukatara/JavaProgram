@@ -1,0 +1,36 @@
+// static method 
+
+class Box
+{
+	static void insert()
+	{
+		System.out.print("static");
+	}
+	void display()
+	{
+		System.out.print("display");
+	    //insert ();    calling method within class 
+	}
+}
+ class chip 
+{
+	void chill ()
+	{
+		System.out.print("Hey");
+	}
+	void bill()
+	{
+		System.out.print("how are you !");
+	}
+	}
+class Run  extends chip
+	{
+		public static void main(String[] args) {
+			Box r =new Box();
+			Run c=new Run();
+			 r.display();
+			 c.chill();
+			 c.bill();
+			 Box.insert();
+		}
+	}

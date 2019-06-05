@@ -1,0 +1,31 @@
+// HIERARCHY level inheritance 
+
+class A 
+{
+	void show ()
+	{
+		System.out.println("Parent");
+	}
+}
+class B extends A                    // extends shows that we inherited parent class(A) into child class(B) 
+{
+	void display()
+	{
+		System.out.println("Child");
+	}
+}
+class C extends A	 
+  {
+  	void insert ()
+  	{
+  		System.out.println("2ndchild");
+  	}
+	public static void main(String[] args) {
+		B b=new B();
+		  b.show();                      // we can call parent class with the help of child class reference ! 
+		  b.display();
+		C c = new C();
+		  c.show();                      // we can call parent class with the help of child class reference !    
+		  c.insert();
+	}
+}

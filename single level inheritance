@@ -1,0 +1,22 @@
+// Single level inheritance 
+
+class Parent 
+{
+	void show ()
+	{
+		System.out.print("Parent");
+	}
+}
+class Child extends Parent                 // extends shows that we inherited parent class into child class !
+{
+	void display()
+	{
+		System.out.print("Child");
+	}
+
+	public static void main(String[] args) {
+		Child c = new Child();
+		  c.show();                             // we can call parent class with the help of child class reference !
+		  c.display();
+	}
+}

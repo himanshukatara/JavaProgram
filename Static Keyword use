@@ -1,0 +1,29 @@
+// static Keyword
+// Static constructors or methods allowed to share their memory to any methods or class !
+
+class Fun
+{
+	int roll;
+	String name;
+	static int  money = 5000;
+	void insert(int r , String n)
+	{
+		roll=r;
+		name=n;
+	}
+    void display()
+    {
+    	System.out.print(roll);
+    	System.out.print(name);
+    		System.out.print(money);     // This line is for using static keyword within class
+    }
+    }
+    class Base
+    {
+      public static void main(String[] args) {
+      	Fun t =new Fun();
+      	   t.insert(101,"ravi");
+      	   t.display();
+      	   System.out.print(Fun.money);    //This line is to use static keyword outside the class in which it was made !
+      }
+    }

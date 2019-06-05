@@ -1,0 +1,29 @@
+// copy constructor
+ 
+  class Test 
+  {
+  	int roll ;
+  	String name ;
+  	Test ( int r,String n)
+    {
+    	roll=r;
+    	name=n;
+    }
+   Test ()
+   {}
+   void dis ()
+   {
+   	System.out.println(roll +""+name);
+   }
+   public static void main(String[] args) {
+   	Test t= new Test(101,"ravi");
+    Test t1=new Test();
+      t1.roll=t.roll;
+      t1.name=t.name;
+       t.dis();
+       t1.dis();
+
+   }
+
+  }
+  

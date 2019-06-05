@@ -1,0 +1,29 @@
+// Multiple level inheritance 
+
+class A 
+{
+	void show ()
+	{
+		System.out.println("Parent");
+	}
+}
+class B extends A                     // extends shows that we inherited parent class(A) into child class(B) 
+{
+	void display()
+	{
+		System.out.println("Child");
+	}
+}
+class C extends B	 
+  {
+  	void insert ()
+  	{
+  		System.out.println("2ndchild");
+  	}
+	public static void main(String[] args) {
+		C c = new C();
+		  c.show();                             // we can call parent class with the help of child class reference !
+		  c.display();                           
+		  c.insert();
+	}
+}
